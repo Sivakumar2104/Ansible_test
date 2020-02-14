@@ -1,0 +1,9 @@
+---
+
+- name : Install tomcat
+  apt:
+          update_cache : true
+          name : "{{ packages }}"
+  vars: 
+        packages:
+                apache2
